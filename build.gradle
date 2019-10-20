@@ -1,0 +1,41 @@
+plugins {
+    id 'java'
+}
+
+group 'com.marvel.api'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+
+    testImplementation group: 'io.rest-assured', name: 'rest-assured', version: '3.0.0'
+    testImplementation group: 'org.json', name: 'json', version: '20190722'
+
+    testImplementation 'io.cucumber:cucumber-java:4.3.1'
+    testImplementation 'io.cucumber:cucumber-junit:4.3.1'
+    testImplementation group: 'io.rest-assured', name: 'json-schema-validator', version: '4.1.2'
+
+    testImplementation group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '3.141.59'
+
+    testImplementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+
+
+}
+
+
+test {
+    ignoreFailures = true
+    dependsOn cleanTest
+    testLogging.showStandardStreams = true
+    useJUnit()
+    systemProperty "cucumber.options", System.getProperty("cucumber.options")
+    systemProperty "public.key", System.getProperty("public.key")
+    systemProperty "private.key", System.getProperty("private.key")
+}
+
