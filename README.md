@@ -9,13 +9,13 @@ To run tests:
 ```
 git clone https://github.com/shavrova/api-tests-demo.git
 ```
-2. Navigate to project root folder in windows comand line
-
-3. Download chromdriver from here:
+2. Download chromdriver from here:
 https://chromedriver.chromium.org/downloads
 Note: depends on chrome version on target machine
 
-4. Put chromdriver.exe file to project root directory
+3. Put chromdriver.exe file to project root directory
+
+4. Navigate to project root folder in windows comand line
 
 5. Run one of next commands:
 
