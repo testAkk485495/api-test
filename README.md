@@ -31,7 +31,7 @@ gradlew -Dcucumber.options="--tags @API" test -Dpublic.key=<public_key> -Dprivat
 ```
 To run only UI tests:
 ```
-gradlew -Dcucumber.options="--tags @API" test -Dpublic.key=<public_key> -Dprivate.key=<private_key>
+gradlew -Dcucumber.options="--tags @UI" test -Dpublic.key=<public_key> -Dprivate.key=<private_key>
 
 ```
 Where <public_key> is public key and <private_key> is private key obtained from marvel website
