@@ -7,7 +7,7 @@ To run tests:
 
 1. Upload project from github:
 ```
-git clone https://github.com/shavrova/api-tests-demo.git
+git clone <project>
 ```
 2. Download chromdriver from here:
 https://chromedriver.chromium.org/downloads
